@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+    <h1 align="center"><u>Jeu du songo</u> </h1>
+
+    <table id="tab">
+
+        <!-- Cote de la machine -->
+        <tr>
+            <td colspan="9" align="center" class="text">Machine</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" class="text">Pions Machine</td>
+            <td><input type="button" class="case" id="0"></td>
+            <td><input type="button" class="case" id="1"></td>
+            <td><input type="button" class="case" id="2"></td>
+            <td><input type="button" class="case" id="3"></td>
+            <td><input type="button" class="case" id="4"></td>
+            <td><input type="button" class="case" id="5"></td>
+            <td><input type="button" class="case" id="6"></td>
+            <td rowspan="3" class="text">Pions Humain</td>
+        </tr>
+
+        <!-- Ligne des scores -->
+
+        <tr>
+            <td colspan="2"><input type="button" class="pion" id="pionM" disabled></td>
+            <td colspan="3"><input type="button" id="milieu"></td>
+            <td colspan="2"><input type="button" class="pion" id="pionH" disabled></td>
+        </tr>
+
+        <!-- Cote du l'utilisateur -->
+
+        <tr>
+            <td><input type="button" class="case" ondblclick="start(7)" id="7"></td>
+            <td><input type="button" class="case" ondblclick="start(8)" id="8"></td>
+            <td><input type="button" class="case" ondblclick="start(9)" id="9"></td>
+            <td><input type="button" class="case" ondblclick="start(10)" id="10"></td>
+            <td><input type="button" class="case" ondblclick="start(11)" id="11"></td>
+            <td><input type="button" class="case" ondblclick="start(12)" id="12"></td>
+            <td><input type="button" class="case" ondblclick="start(13)" id="13"></td>
+        </tr>
+
+        <tr>
+            <td colspan="9" align="center" class="text">Humain</td>
+        </tr>
+    </table>
+
+    <script src="jeu.js"></script>
+</body>
+</html>

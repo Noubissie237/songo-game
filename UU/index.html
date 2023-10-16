@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-User</title>
+    <link rel="stylesheet" href="../UM/style.css">
+</head>
+<body onload="actu()">
+
+    <button onclick="newPart()" style="background-color: rgba(0, 128, 0, 0.226); border-radius: 10px;">Rejouer</button>
+    <form action="../">
+        <br>
+        <button onclick="menu()" style="background-color: rgba(255, 0,0, 0.5); border-radius: 10px;">Aller au menu</button>
+    </form>
+
+    <h1 align="center"><u>Jeu du songo</u> </h1>
+
+    <table id="tab">
+
+        <!-- Cote de la machine -->
+        <tr>
+            <td colspan="9" align="center" class="text"><span id="jr1"></span></td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" class="text">Pions <span id="pjr1"></span></td>
+            <td><input type="button" class="case" ondblclick="dist(0)" id="0"></td>
+            <td><input type="button" class="case" ondblclick="dist(1)" id="1"></td>
+            <td><input type="button" class="case" ondblclick="dist(2)" id="2"></td>
+            <td><input type="button" class="case" ondblclick="dist(3)" id="3"></td>
+            <td><input type="button" class="case" ondblclick="dist(4)" id="4"></td>
+            <td><input type="button" class="case" ondblclick="dist(5)" id="5"></td>
+            <td><input type="button" class="case" ondblclick="dist(6)" id="6"></td>
+            <td rowspan="3" class="text">Pions <span id="pjr2"></span></td>
+        </tr>
+
+        <!-- Ligne des scores -->
+
+        <tr>
+            <td colspan="2"><input type="button" class="pion" id="pion1" disabled></td>
+            <td colspan="3"><input type="button" id="milieu"></td>
+            <td colspan="2"><input type="button" class="pion" id="pion2" disabled></td>
+        </tr>
+
+        <!-- Cote du l'utilisateur -->
+
+        <tr>
+            <td><input type="button" class="case" ondblclick="dist(7)" id="7"></td>
+            <td><input type="button" class="case" ondblclick="dist(8)" id="8"></td>
+            <td><input type="button" class="case" ondblclick="dist(9)" id="9"></td>
+            <td><input type="button" class="case" ondblclick="dist(10)" id="10"></td>
+            <td><input type="button" class="case" ondblclick="dist(11)" id="11"></td>
+            <td><input type="button" class="case" ondblclick="dist(12)" id="12"></td>
+            <td><input type="button" class="case" ondblclick="dist(13)" id="13"></td>
+        </tr>
+
+        <tr>
+            <td colspan="9" align="center" class="text"><span id="jr2"></span></td>
+        </tr>
+    </table>
+
+    <script src="jeu.js"></script>
+</body>
+</html>

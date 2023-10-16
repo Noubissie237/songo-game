@@ -1,0 +1,34 @@
+#tab
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.case, .pion, #milieu
+{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.pion, #milieu
+{
+    width: 100%;
+}
+
+#milieu
+{
+    display: none;
+}
+
+.text
+{
+    font-size: 20px;
+}
+
+.pion
+{
+    color: blue;
+}

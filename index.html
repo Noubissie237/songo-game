@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Jeu du songo</title>
+</head>
+<body>
+    <h1 align="center">Jouer au songo</h1><br><br>
+
+    <!-- Premier formulaire (pour jouer contre un autre utilisateur) -->
+    <form action="UU/" method="post">
+        <input type="button" value="J1 vs J2" class="bouton" onclick="newUser()" id="bout" >
+        <span id="cacher" style="display: none;">
+            <input type="text" name="nom" id="nom" required>
+            <input type="submit" value="Let's Go" onclick="insert()">
+        </span>
+    </form>
+
+    <!-- Deuxieme formulaire (pour jouer contre la machine) -->
+    <form action="UM" method="post">
+        <span id="cacher1">
+            <button class="bouton" id="bouton2">J1 vs IA</button>
+        </span>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
